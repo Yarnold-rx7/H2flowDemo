@@ -1,0 +1,23 @@
+var loc = window.location.pathname;
+
+$('#nav').find('a').each(function() {
+    var tmpUrl = $(this).attr('href');
+    loc = loc.replace('%20', ' ');
+    $(this).toggleClass('active', tmpUrl == loc);
+});
+
+var parallaxItem = $('.parallax-water');
+var parallaxItem2 = $('.parallax-water2');
+$(window).scroll(function () {
+    scrollPos = $(this).scrollTop();
+    parallaxItem.css({
+        'background-position': "left " + (scrollPos * -0.25) + "px",
+    });
+    parallaxItem2.css({
+        'background-position': "left " + (scrollPos * -0.25) + "px",
+    });
+});
+
+function toggleNavMenu() {
+    $('.mobileMenu').toggle();
+}
