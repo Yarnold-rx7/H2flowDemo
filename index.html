@@ -798,35 +798,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
     <!-- Show four images at once -->
-    <script>
-      const items = document.querySelectorAll(".carousel1 .carousel-item1");
-      items.forEach((e) => {
-        const slide = 5;
-        let next = e.nextElementSibling;
-        for (let i = 0; i < slide; i++) {
-          if (!next) {
-            next = items[0];
-          }
-          let cloneChild = next.cloneNode(true);
-          e.appendChild(cloneChild.children[0]);
-          next = next.nextElementSibling;
-        }
-      });
-
-      const items2 = document.querySelectorAll(".carousel2 .carousel-item2");
-      items2.forEach((e) => {
-        const slide = 5;
-        let next = e.nextElementSibling;
-        for (let i = 0; i < slide; i++) {
-          if (!next) {
-            next = items2[0];
-          }
-          let cloneChild = next.cloneNode(true);
-          e.appendChild(cloneChild.children[0]);
-          next = next.nextElementSibling;
-        }
-      });
-    </script>
   </body>
 </html>
