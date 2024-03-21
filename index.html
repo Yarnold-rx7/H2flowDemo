@@ -27,9 +27,9 @@
     />
     <link rel="stylesheet" href="/static/pages/css/font-awesome.min.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="base.css" />
@@ -84,11 +84,25 @@
             </div>
           </div>
         </div>
-        <div class="container pt-2 pb-4">
-          <a href="./index.html">
-            <img id="logo" class="d-block mx-auto" src="./src1/logo.png" />
-          </a>
+        <div class="row flex">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="container pt-2 pb-4">
+              <a href="./index.html">
+                <img id="logo" class="d-block mx-auto" src="./src1/logo.png" />
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <button
+              type="button"
+              class="text-light btn btn-warning service-btn float-right mx-5 mt-4"
+            >
+              Submit Service Request!
+            </button>
+          </div>
         </div>
+
         <nav id="nav">
           <ul class="d-none d-lg-block">
             <li id="mnu_home">
@@ -109,11 +123,12 @@
             <li id="mnu_case studies">
               <a href="#">NEWS</a>
             </li>
-            <li id="mnu_media">
-              <a href="#">CONTACT US</a>
-            </li>
+
             <li id="mnu_downloads">
               <a href="#">PROJECTS</a>
+            </li>
+            <li id="mnu_media">
+              <a href="#">CONTACT US</a>
             </li>
           </ul>
           <div class="container mobileMenuBtn d-block d-lg-none">
@@ -142,21 +157,9 @@
           <div class="shadow"></div>
         </div>
 
-        <!-- <div class="header_slideshow border-color-bottom" style="background: url('/static/pages/images/03_Manufacturers_SPACER_002.jpg') center center; background-size: cover;">
-    <div class="container">
-        <!-- <div class="home"> 25+ Years of CLEAN WATER! </div> // -- // >
-        
-        <img class="img-fluid d-block mx-auto px-4" style="max-height:220px"
-            src="/static/pages/images/en_HOME_Headline.png">
-        
-    </div>
-
-    <div class="shadow"> </div>
-</div> -->
-
         <div class="bg-white py-4">
           <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-12 col-lg-8">
                 <h1>
                   <span style="color: #00acd4">H2Flow Equipment Inc.</span>
@@ -166,8 +169,9 @@
                 <h3>Who we are</h3>
 
                 <p>
-                  H2Flow is a Canadian based equipment supplier, celebrating
-                  over thirty years in business
+                  H2Flow is a Canadian based wate and wastewater treatment
+                  equipment supplier, and manufacturer's representive
+                  celebrating over thirty years in business.
                 </p>
 
                 <h3>What we do</h3>
@@ -176,7 +180,7 @@
                   H2Flow designs and supplies water and wastewater treatment
                   equipment, specific for each application. We have years of
                   experience to know that each application is unique and we
-                  treat each one with attention and care
+                  treat each one with attention and care.
                 </p>
                 <h3>Who we serve</h3>
                 <p>
@@ -188,349 +192,492 @@
             </div>
           </div>
         </div>
+        <div class="border-color-bottom">
+          <div class="shadow"></div>
+        </div>
+        <section class="mnf-carousel">
+          <div class="container">
+            <!-- <h3 class="text-center">
+              <span style="color: #00acd4"
+                >Some of Our Technolgy Providers</span
+              >
+            </h3> -->
+            <div
+              id="carouselMnfAutoplay1"
+              class="carousel carousel1"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-item1">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_TrojanUV.jpg"
+                          class="card-img carousel-card-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_AdEdge.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Biorem.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Fluence.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Ovivo.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselMnfAutoplay1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselMnfAutoplay1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div
+              id="carouselMnfAutoplay2"
+              class="carousel2"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-item2">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Parkson.jpg"
+                          class="card-img carousel-card-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Aerzen.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_Atlas-SSI.jpg"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_biowater.gif"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                  <div class="col-md-3">
+                    <div class="card carousel-card">
+                      <div class="card-body">
+                        <img
+                          src="./img/00_03_manu_EDI.png"
+                          class="card-img carousel-card-img img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselMnfAutoplay2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselMnfAutoplay2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
 
-        <div class="parallax-water">
+        <section class="technogies parallax-water">
           <div class="shadow-bottom"></div>
-
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                <div class="p-2 mb-3">
-                  <h2 class="mb-4 mt-2 parallax-header-white">
-                    We Offer the Following Technologies
-                  </h2>
+              <h2 class="mb-4 mt-2 parallax-header-white">
+                We provide the Following Technologies
+              </h2>
+              <div class="row MB-4 tech-list">
+                <div class="col-lg-6">
+                  <div class="list-group text-light">
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        HEADWORKS / SCREENING
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        UV AOP & DISINFECTION
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        BIOLOGICAL TREATMENT
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        AERATION AND DIFFUSERS
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        PROCESS BLOWERS
+                      </button></a
+                    >
+                    <a href="#"
+                      ><button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        DIGESTER MIXERS
+                      </button></a
+                    >
+                  </div>
+                  <!--list group1-->
+                </div>
+                <div class="col-lg-6">
+                  <div class="list-group text-light">
+                    <a class="list-group-item">DISSOLVED AIR FLOTATION</a>
+                    <a href="#">
+                      <button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        CLARIFICATION / FILTRATION
+                      </button></a
+                    >
+                    <a href="#">
+                      <button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        AEROBIC & ANAEROBIC DIGESTERS
+                      </button></a
+                    >
+                    <a href="#">
+                      <button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        SLUDGE DEWATERING
+                      </button></a
+                    >
+                    <a href="#">
+                      <button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        ODOUR CONTROL
+                      </button></a
+                    >
+                    <a href="#">
+                      <button
+                        type="button"
+                        class="list-group-item list-group-item-action"
+                      >
+                        TANKS & COVERS
+                      </button></a
+                    >
+                  </div>
+                  <!--List group2-->
                 </div>
               </div>
             </div>
-
+          </div>
+        </section>
+        <!--parralax-->
+        <section class="sector-headers">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/Muni_WWTP.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">
-                      Municipal Water and Wastewater Treatment
-                    </h4>
+              <h2 class="mb-4 mt-2 text-center parallax-header">
+                We Serve the Following Sectors
+              </h2>
+              <div class="row treatment-sectors">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body p-3">
+                      <h4 class="card-title">
+                        Municipal Water & Wastewater Treatment
+                      </h4>
 
-                    <p class="card-text">
-                      H2Flow Equipment represents leading manufacturers for
-                      every stage of a municpal treatment plant from Headworks
-                      all the way to disinfection.
-                    </p>
-                    <a class="card-link" href="./Municipal.html">More</a>
+                      <a class="card-link" href="./Municipal.html"
+                        ><img
+                          src="./cards/Muni_WWTP.jpg"
+                          style="height: 300px"
+                          class="card-img img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body p-3">
+                      <h4 class="card-title">
+                        Industrial Water and Wastewater Treatment
+                      </h4>
 
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/DAF.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">
-                      Industrial Water and Wastewater Treatment
-                    </h4>
-
-                    <p class="card-text">
-                      H2Flow's very own line of Dissolved Air Flotation units.
-                      DAF is a technology used extensively for wastewater
-                      treatment in food plants, oil & gas, mining, pulp & paper,
-                      many major industries and municipal wastewater plants.
-                    </p>
-                    <a
-                      class="card-link"
-                      href="http://www.h2flowengineeredsystems.com/"
-                      target="_blank"
-                      >More</a
-                    >
+                      <a class="card-link" href="./Municipal.html"
+                        ><img
+                          src="./cards/DAF.jpg"
+                          style="height: 300px"
+                          class="card-img img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body p-3">
+                      <h4 class="card-title">
+                        Glass Fused to Steel and Stainless Steel Bolted Tanks
+                      </h4>
 
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/Tanks.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">Glass Fused to Steel Tanks</h4>
-
-                    <p class="card-text">
-                      H2Flow Tanks & Systems Inc. is partnered with PERMASTORE
-                      to provide Glass-Fused-to-Steel tank technology across
-                      Canada, along with innovative mixing devices, other tanks
-                      and integrated processes.
-                    </p>
-                    <a
-                      class="card-link"
-                      href="http://www.h2flowtanks.com/"
-                      target="_blank"
-                      >More</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/odourControl.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">Odour Control</h4>
-
-                    <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Dicta quo quaerat necessitatibus deserunt quos, dolorem
-                      iste. Laborum eligendi minus reprehenderit, laudantium at
-                      facere earum aliquid placeat molestias saepe? Mollitia,
-                      vel.
-                    </p>
-                    <a
-                      class="card-link"
-                      href="http://www.h2flowtanks.com/"
-                      target="_blank"
-                      >More</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/Biogas.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">Biogas Conditioning</h4>
-
-                    <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Quis corporis iusto eum impedit! Ullam similique nulla
-                      nihil minus fuga sit optio, eveniet ut, dicta impedit
-                      quasi accusantium officiis. Facere, perspiciatis!
-                    </p>
-                    <a
-                      class="card-link"
-                      href="http://www.h2flowtanks.com/"
-                      target="_blank"
-                      >More</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent-white">
-                  <img class="card-img-top" src="./cards/Containerized.jpg" />
-                  <div class="card-block p-3">
-                    <h4 class="card-title">Containerized Systems</h4>
-
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Mollitia, distinctio repudiandae minima officia voluptatum
-                      nisi repellat. Voluptates nisi sunt porro maxime accusamus
-                      consequatur exercitationem, architecto veniam quidem
-                      laborum dicta recusandae!.
-                    </p>
-                    <a
-                      class="card-link"
-                      href="http://www.h2flowtanks.com/"
-                      target="_blank"
-                      >More</a
-                    >
+                      <a class="card-link" href="./Municipal.html"
+                        ><img
+                          src="./cards/Tanks.jpg"
+                          style="height: 300px"
+                          class="card-img img-fluid"
+                          alt=""
+                      /></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="py-4 recent-projects">
+        <div class="py-4 projects-news">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h2>Recent Projects</h2>
+                <h2>Projects and News</h2>
 
                 <hr />
               </div>
             </div>
 
             <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/00_H2Flow_News_THUMB_Template_kSY0Qjh.png"
-                    class="card-img-top"
-                    src="./cards/Bakkavor.png"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">Bakkavor Foods DAF System</h5>
-                    <small class="text-right">Aug. 18, 2023</small>
-
-                    <hr />
-                    <p class="card-text">
-                      Bakkavor Foods required a pre-treatment system to reduce
-                      the loadings of its processing plant. H2Flow was acquired
-                      to provide a Dissolved Air Flotation (DAF) system to meet
-                      their treatment needs. With the parameters provided by the
-                      client as the basis of design (summarized above), a full
-                      treatment package was installed in January 2019, which
-                      included screen feed pumps, an internally-fed rotary
-                      screen, a transfer tank with equalization (EQ) feed pumps,
-                      EQ tank with mixing, DAF feed pumps, a pipe flocculator
-                      and DAF unit (both of 15 m3/hour nominal capacity), sludge
-                      pump and tank, air compressor, chemical dosing equipment,
-                      as well as PLC controls
-                    </p>
-                    <a
-                      class="card-link"
-                      href="https://h2flow.com/media/casePdf/CS_Bakkavor_Foods_DAF.pdf"
-                      >Read More</a
-                    >
+              <div id="carouselProjects" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjects"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjects"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjects"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./cards/Bakkavor.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>H2FLow DAF System</h5>
+                      <p>Baakavor Food Production plant</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./cards/PackagedPlant.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Pilot Plant</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./cards/rotoshear.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Rotoary Screen</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/2023_03_March_06-H2Flow-Mining-Company-Northern-Quebec_THUMB.jpg"
-                    class="card-img-top"
-                    src="/media/news/2023_03_March_06-H2Flow-Mining-Company-Northern-Quebec_THUMB.jpg"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">Mining Company - Northern Québec</h5>
-                    <small class="text-right">March 6, 2023</small>
-
-                    <hr />
-                    <p class="card-text">
-                      H2Flow was recently awarded a contract by a Mining Company
-                      for a project in Northern Québec. The plant will be
-                      servicing the mine development and operation and involves
-                      providing a fully containerize…
-                    </p>
-                    <a class="card-link" href="/content/english/news/125"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/2022_12_Dec_MSTA-Canada-The-DIG-Interview-w-Michael_THUMB.jpg"
-                    class="card-img-top"
-                    src="/media/news/2022_12_Dec_MSTA-Canada-The-DIG-Interview-w-Michael_THUMB.jpg"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">
-                      MSTA CANADA THE DIG: Episode 62 with Michael Albanese from
-                      H2Flow
-                    </h5>
-                    <small class="text-right">Dec. 5, 2022</small>
-
-                    <hr />
-                    <p class="card-text">
-                      H2Flow’s President Michael Albanese was invited to sit
-                      down for a chat with Ryan McEachern from THE DIG,
-                      specifically to discuss water treatment challenges in the
-                      mining industry. H2Flow thanks MS…
-                    </p>
-                    <a class="card-link" href="/content/english/news/124"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselProjects"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselProjects"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="py-4 featured-news">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="text-light">Featured News</h2>
 
-                <hr />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/00_H2Flow_News_THUMB_Template_kSY0Qjh.png"
-                    class="card-img-top"
-                    src="/media/news/00_H2Flow_News_THUMB_Template_kSY0Qjh.png"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">
-                      H2FLOW EQUIPMENT ANNOUNCES NEW PRESIDENT (Vaughan,
-                      Ontario)
-                    </h5>
-                    <small class="text-right">Aug. 18, 2023</small>
-
-                    <hr />
-                    <p class="card-text">
-                      I am very pleased to announce that Albert Wakim has been
-                      appointed to the position of President of H2Flow Equipment
-                      Inc. There truly is a very promising future and new
-                      beginning at H2Flow Equipment. …
-                    </p>
-                    <a class="card-link" href="/content/english/news/127"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/2023_03_March_06-H2Flow-Mining-Company-Northern-Quebec_THUMB.jpg"
-                    class="card-img-top"
-                    src="/media/news/2023_03_March_06-H2Flow-Mining-Company-Northern-Quebec_THUMB.jpg"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">Mining Company - Northern Québec</h5>
-                    <small class="text-right">March 6, 2023</small>
-
-                    <hr />
-                    <p class="card-text">
-                      H2Flow was recently awarded a contract by a Mining Company
-                      for a project in Northern Québec. The plant will be
-                      servicing the mine development and operation and involves
-                      providing a fully containerize…
-                    </p>
-                    <a class="card-link" href="/content/english/news/125"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="card">
-                  <img
-                    alt="news/2022_12_Dec_MSTA-Canada-The-DIG-Interview-w-Michael_THUMB.jpg"
-                    class="card-img-top"
-                    src="/media/news/2022_12_Dec_MSTA-Canada-The-DIG-Interview-w-Michael_THUMB.jpg"
-                  />
-                  <div class="card-block p-3">
-                    <h5 class="card-title">
-                      MSTA CANADA THE DIG: Episode 62 with Michael Albanese from
-                      H2Flow
-                    </h5>
-                    <small class="text-right">Dec. 5, 2022</small>
-
-                    <hr />
-                    <p class="card-text">
-                      H2Flow’s President Michael Albanese was invited to sit
-                      down for a chat with Ryan McEachern from THE DIG,
-                      specifically to discuss water treatment challenges in the
-                      mining industry. H2Flow thanks MS…
-                    </p>
-                    <a class="card-link" href="/content/english/news/124"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="py-4 border-color-top">
           <div class="container"></div>
         </div>
@@ -638,16 +785,48 @@
         </div>
       </footer>
     </div>
+    <script>
+      const myCarouselElement = document.querySelector("#carouselMnfAutoplay1");
+
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 15000,
+        touch: false,
+      });
+    </script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/static/pages/js/base.js"></script>
+    <!-- Show four images at once -->
+    <script>
+      const items = document.querySelectorAll(".carousel1 .carousel-item1");
+      items.forEach((e) => {
+        const slide = 5;
+        let next = e.nextElementSibling;
+        for (let i = 0; i < slide; i++) {
+          if (!next) {
+            next = items[0];
+          }
+          let cloneChild = next.cloneNode(true);
+          e.appendChild(cloneChild.children[0]);
+          next = next.nextElementSibling;
+        }
+      });
+
+      const items2 = document.querySelectorAll(".carousel2 .carousel-item2");
+      items2.forEach((e) => {
+        const slide = 5;
+        let next = e.nextElementSibling;
+        for (let i = 0; i < slide; i++) {
+          if (!next) {
+            next = items2[0];
+          }
+          let cloneChild = next.cloneNode(true);
+          e.appendChild(cloneChild.children[0]);
+          next = next.nextElementSibling;
+        }
+      });
+    </script>
   </body>
 </html>

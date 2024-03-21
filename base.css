@@ -12,7 +12,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
   font-family: "Oswald", sans-serif;
   color: #656565;
 }
@@ -123,6 +124,59 @@ nav > ul > li > a:hover {
   background: #4497bb;
   color: #fff;
 }
+
+/* ############################################CAROUSEL */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  transition: transform 3s ease;
+}
+
+@media (min-width: 786px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translate(25%);
+  }
+  .carousel-inner .carousel-item.start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translate(-25%);
+  }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.mnf-carousel {
+  background-color: #ffffff;
+}
+.carousel-card-img {
+  height: 75px;
+}
+
+.card {
+  border: none;
+}
+
+/* ################################################## */
+
+/* ###############TECHNOLOGY LIST############### */
+
+.tech-list .list-group-item {
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px;
+  color: #4497bb;
+}
+
+.tech-list a {
+  text-decoration: none;
+}
+
+/* ###################################################### */
 .text-blue {
   color: #00acd4 !important;
 }
@@ -154,14 +208,14 @@ nav > ul > li > a:hover {
   text-shadow: 1px 1px #000;
 }
 .parallax-water {
-  background: url("../bkrnds/home_parallax.jpg") left;
+  background: url("./bkrnds/home_parallax.jpg") left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .parallax-water2 {
-  background: url("../bkrnds/home_parallax.jpg") left;
+  background: url("./bkrnds/home_parallax.jpg") left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -183,6 +237,10 @@ nav > ul > li > a:hover {
   font-size: 400%;
 }
 .parallax-header-white h2 {
+  font-size: 350%;
+}
+.parallax-header h2 {
+  font-size: 2.5rem;
   font-size: 350%;
 }
 .parallax-header-white h3 {
@@ -332,7 +390,7 @@ nav > ul > li > a:hover {
   position: relative;
   height: 225px;
   /* background: url('/static/pages/images/page_headlines/01_Home_SPACER_012.jpg') center; */
-  background: url("../bkrnds/03_Manufacturers_SPACER_002.jpg") center;
+  background: url("./bkrnds/waves.jpg") center;
   background-size: cover;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -457,6 +515,16 @@ nav > ul > li > a:hover {
 
 .featured-news {
   background: #748899;
+}
+
+.service-btn {
+  background-color: rgb(19, 69, 19);
+  border-color: rgb(10, 35, 10);
+}
+
+.service-btn:hover {
+  background-color: rgb(36, 40, 36);
+  border-color: rgb(36, 40, 36);
 }
 
 @media (max-width: 992px) {
